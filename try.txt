@@ -1,0 +1,7 @@
+
+# local / remote
+$git remote         #查看目前遠端連線
+$git remote add     #添加遠端連線
+$git push           #推送commit到遠端
+$git pull           #從遠端拉下commit
+$git clone          #下載專案
