@@ -1,7 +1,33 @@
+### terminal command
+$pwd                          #當前位置(Print Working Directory)
+$ls                           #當前資料夾所有檔案(List)
+$cd                           #切換位置(Chang Directory)(cd .. 回上層)
+$mkdir                        #新增資料夾
+$touch                        #新增檔案
+$rm                           #移除檔案 
+$mv                           #移動檔案
+$cp                           #複製檔案
 
-# local / remote
-$git remote         #查看目前遠端連線
-$git remote add     #添加遠端連線
-$git push           #推送commit到遠端
-$git pull           #從遠端拉下commit
-$git clone          #下載專案
+### basic git command
+$git init                     #版本控制初始化
+$git status                   #查詢狀況
+$git add (+檔案名增)           #將檔案加入版本控制(把檔案放入temp)(+ . 代表全部)
+$git rm --cached (+檔案名稱)   #將檔案移除版本控制
+$git commit                   #新建版本
+$git commit -am (+"訊息")     #新建版本且可留言變更訊息
+$git log                      #查看歷史資料(補充：+ --online：簡短歷史資料)
+$git checkout                 #回到之前版本
+$git checkout (主/分支名稱)    #切換分支
+
+###git branch
+$git branch + (名稱)          #建立 branch
+$git branch -v               #查看有哪些 branch
+$git branch -d               #刪除 branch
+$git merge                   #合併 branch (merge可能會造成conflic，需手動解決)
+
+###git local / remote
+$git remote                  #查看目前遠端連線
+$git remote add              #添加遠端連線
+$git push                    #推送commit到遠端
+$git pull                    #從遠端拉下commit
+$git clone                   #下載專案
